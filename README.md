@@ -32,7 +32,7 @@ Este repositório contém o código-fonte do meu currículo online, criado como 
 
 ## 📂 Estrutura do Projeto
 
-
+<pre>
 curriculo-online/
 ├── assets/
 │   └── curriculo-jordan-menezes.pdf  # Arquivo PDF do currículo (versão completa)
@@ -54,7 +54,7 @@ curriculo-online/
 ├── .gitignore                      # Arquivos/pastas a serem ignorados pelo Git
 ├── netlify.toml                    # Configuração do Netlify
 └── README.md                       # Este arquivo
-
+</pre>
 
 ## 🛠️ Como Executar o Projeto Localmente
 
