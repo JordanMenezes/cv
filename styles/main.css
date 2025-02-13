@@ -1,0 +1,83 @@
+/* Import base styles */
+@import url('base/reset.css');
+@import url('base/typography.css');
+@import url('base/variables.css');
+
+/* Import components */
+@import url('components/header.css');
+@import url('components/timeline.css');
+@import url('components/skills.css');
+@import url('components/theme-toggle.css');
+@import url('components/contact-form.css');
+/* Import other component styles as needed */
+
+/* Import utilities */
+@import url('utilities/animations.css');
+@import url('utilities/responsive.css');
+
+/* General styles */
+body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+    max-width: 1200px;
+    margin: var(--space-lg) auto;
+    padding: 0 var(--space-sm);
+}
+
+.card {
+    background: var(--color-card-bg);
+    border-radius: var(--border-radius-large);
+    padding: var(--space-md);
+    margin-bottom: var(--space-md);
+    box-shadow: var(--color-card-shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.section-title {
+    color: var(--color-primary);
+    margin-bottom: var(--space-sm);
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+}
+
+.section-title i {
+    font-size: 1.5em;
+}
+
+.footer {
+  text-align: center;
+  padding: var(--space-md) 0;
+  color: var(--color-secondary);
+  border-top: 1px solid var(--color-card-bg);
+  margin-top: var(--space-lg);
+}
+
+/* Screen Reader Only Class */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.languages-list, .additional-info-list {
+    margin-top: var(--space-xs);
+    padding-left: var(--space-md);
+}
+.languages-list li, .additional-info-list li{
+    margin-bottom: var(--space-xs);
+}

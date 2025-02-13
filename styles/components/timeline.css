@@ -1,0 +1,70 @@
+.timeline {
+    position: relative;
+    padding-left: var(--space-lg);
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background: var(--color-primary);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: var(--space-md);
+    padding-left: var(--space-md);
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 5px;
+    width: 16px;
+    height: 16px;
+    background: var(--color-primary);
+    border-radius: 50%;
+    transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+.timeline-item:hover::before {
+    background-color: var(--color-secondary); /* Change color on hover */
+}
+
+.timeline-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-xs);
+    margin-bottom: var(--space-xs);
+    color: var(--color-secondary);
+}
+.timeline-details > * {
+    margin-right: var(--space-xs);
+}
+
+.company i, .date i {
+    margin-right: 0.3em;
+}
+
+.responsibilities {
+    margin-top: var(--space-xs);
+    padding-left: var(--space-md);
+}
+
+.responsibilities li {
+    margin-bottom: var(--space-xs);
+}
+
+/* Microinteraction: subtle hover effect */
+.timeline-item:hover {
+    background-color: var(--color-card-bg);
+    border-radius: var(--border-radius);
+    padding: var(--space-xs) var(--space-md);
+    margin-left: -1rem; /* Adjust to compensate for padding */
+    margin-right: -1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}

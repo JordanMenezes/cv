@@ -1,0 +1,46 @@
+:root {
+    /* Light Theme */
+    --color-primary: #4a90e2;
+    --color-secondary: #2c3e50;
+    --color-background: #ffffff;
+    --color-text: #333333;
+    --color-card-bg: #f9f9f9;
+    --color-card-shadow: rgba(0, 0, 0, 0.1);
+    --color-link: #007bff;
+    --color-link-hover: #0056b3;
+
+    /* Dark Theme */
+    --dark-color-primary: #6fa8dc;
+    --dark-color-secondary: #bdc3c7;
+    --dark-color-background: #2c3e50;
+    --dark-color-text: #ecf0f1;
+    --dark-color-card-bg: #34495e;
+    --dark-color-card-shadow: rgba(0, 0, 0, 0.3);
+    --dark-color-link: #3498db;
+    --dark-color-link-hover: #2980b9;
+
+    /* Spacing */
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 1.5rem;
+    --space-lg: 2rem;
+    --space-xl: 3rem;
+
+    /* Border Radius */
+    --border-radius: 8px;
+    --border-radius-large: 15px;
+
+    /* Transition */
+    --transition: all 0.3s ease;
+}
+
+[data-theme="dark"] {
+    --color-primary: var(--dark-color-primary);
+    --color-secondary: var(--dark-color-secondary);
+    --color-background: var(--dark-color-background);
+    --color-text: var(--dark-color-text);
+    --color-card-bg: var(--dark-color-card-bg);
+    --color-card-shadow: var(--dark-color-card-shadow);
+    --color-link: var(--dark-color-link);
+    --color-link-hover: var(--dark-color-link-hover);
+}

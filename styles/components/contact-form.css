@@ -1,0 +1,56 @@
+/* styles/components/contact-form.css */
+.whatsapp-form {
+    display: grid;
+    gap: var(--space-sm);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: var(--space-xs);
+    font-weight: 600;
+}
+
+.form-group textarea {
+    padding: var(--space-xs);
+    border: 1px solid var(--color-secondary);
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    resize: vertical; /* Permite redimensionamento vertical */
+}
+
+.form-group textarea:focus {
+    border-color: var(--color-primary);
+    outline: none;
+}
+
+.btn {
+    display: inline-flex; /* Use inline-flex to align icon and text */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    padding: var(--space-xs) var(--space-md);
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-align: center;
+    font-weight: 600;
+    gap: var(--space-xs); /* Add gap between icon and text */
+}
+
+.btn-whatsapp {
+    background-color: #25d366; /* WhatsApp green */
+    color: white;
+}
+
+.btn-whatsapp:hover {
+    background-color: #128c7e; /* Darker WhatsApp green on hover */
+}
+
+.btn-whatsapp i {
+    font-size: 1.2rem; /* Adjust icon size as needed */
+}
